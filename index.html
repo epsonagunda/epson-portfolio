@@ -1,191 +1,167 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
-    <title>Epson Agunda - Professional Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Epson Agunda's professional portfolio in customer care, Cisco networking and website design.">
+  <title>Epson Agunda | IT Professional</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #131f33;
+      --blue: #3b82f6;
+      --text: #f1f5f9;
+      --muted: #b6c4d8;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.7 Arial, sans-serif;
+    }
+    a { color: #93c5fd; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(1080px, 90%); margin: auto; }
+    header {
+      padding: 20px 0;
+      border-bottom: 1px solid #27364b;
+    }
+    nav {
+      display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; gap: 16px;
+    }
+    nav strong { font-size: 1.2rem; }
+    nav div { display: flex; flex-wrap: wrap; gap: 18px; }
+    .hero { padding: 90px 0 75px; }
+    .tag { color: #93c5fd; font-weight: bold; letter-spacing: 2px; }
+    h1 { font-size: clamp(2.5rem, 7vw, 4.8rem); line-height: 1.1; margin: 18px 0; }
+    h2 { font-size: 2rem; margin-bottom: 14px; }
+    .intro { max-width: 690px; color: var(--muted); font-size: 1.1rem; }
+    .btn {
+      display: inline-block; background: var(--blue); color: white;
+      padding: 12px 20px; border-radius: 8px; margin: 12px 10px 0 0;
+    }
+    .btn.secondary { background: transparent; border: 1px solid #52627a; }
+    section { padding: 55px 0; }
+    .muted { color: var(--muted); }
+    .grid {
+      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px; margin-top: 24px;
+    }
+    .card {
+      background: var(--panel); border: 1px solid #27364b;
+      border-radius: 14px; padding: 24px;
+    }
+    .card h3 { margin-top: 0; }
+    footer { padding: 28px 0; border-top: 1px solid #27364b; color: var(--muted); }
+    @media (max-width: 700px) {
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 55px; }
+      nav { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
 </head>
-
 <body>
+  <header>
+    <nav class="container">
+      <strong>EPSON AGUNDA</strong>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-    <!--===== HEADER =====-->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav__logo">Epson Agunda</a>
-            </div>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                </ul>
-            </div>
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="bx bx-menu"></i>
-            </div>
-        </nav>
-    </header>
+  <main>
+    <section class="hero container">
+      <p class="tag">CUSTOMER CARE · CISCO NETWORKING · WEB DESIGN</p>
+      <h1>Connecting people,<br>networks and ideas.</h1>
+      <p class="intro">
+        I am Epson Agunda, an aspiring IT professional based in Nairobi,
+        Kenya, interested in customer support, network troubleshooting,
+        and designing user-friendly websites.
+      </p>
+      <a class="btn" href="#skills">Explore My Skills</a>
+      <a class="btn secondary" href="#contact">Contact Me</a>
+    </section>
 
-    <!--===== MAIN =====-->
-    <main class="l-main">
+    <section id="about" class="container">
+      <h2>About Me</h2>
+      <p class="muted">
+        I am seeking an opportunity to develop my technical and
+        professional skills, support users, and contribute to a team.
+        I value clear communication, continuous learning, and solving
+        problems in a practical way.
+      </p>
+    </section>
 
-        <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">Hi, I'm <span class="home__title-color">Epson Agunda</span><br>A Customer Care Specialist</h1>
-                <p class="home__text">A results-driven professional with over 8 years of experience in customer service and technical support. I’m passionate about delivering exceptional client experiences and driving business success.</p>
-                <a href="#contact" class="button">Contact Me</a>
-            </div>
+    <section id="skills" class="container">
+      <h2>My Skills</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Customer Care</h3>
+          <p class="muted">Customer communication, listening,
+          issue resolution and service support.</p>
+        </article>
+        <article class="card">
+          <h3>Cisco Networking</h3>
+          <p class="muted">Add your verified skills in IP addressing,
+          network configuration and troubleshooting.</p>
+        </article>
+        <article class="card">
+          <h3>Website Design</h3>
+          <p class="muted">Add the web design tools, languages and
+          frameworks you can confidently use.</p>
+        </article>
+      </div>
+    </section>
 
-            <div class="home__img">
-                <img src="assets/img/eps.jpg" alt="Epson Agunda" class="home__image">
-            </div>
-        </section>
+    <section id="projects" class="container">
+      <h2>Featured Projects</h2>
+      <p class="muted">Replace these placeholders with work you have
+      actually completed.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Networking Lab</h3>
+          <p class="muted">[Describe a real networking lab or exercise.]</p>
+          <a href="[Project URL]">View project</a>
+        </article>
+        <article class="card">
+          <h3>Website Design</h3>
+          <p class="muted">[Describe a real website you designed.]</p>
+          <a href="[Project URL]">View project</a>
+        </article>
+        <article class="card">
+          <h3>Customer Support</h3>
+          <p class="muted">[Describe relevant real experience or training.]</p>
+        </article>
+      </div>
+    </section>
 
-        <!--===== ABOUT =====-->
-        <section class="about section" id="about">
-            <h2 class="section-title">About Me</h2>
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/eps.jpg" alt="Epson Agunda">
-                </div>
-                <div class="about__text">
-                    <h3 class="about__subtitle">Professional Summary</h3>
-                    <p>I'm a dedicated Customer Care Expert with over 8 years of experience across various industries. I specialize in customer service, technical support, and relationship management. My goal is to provide top-tier support that fosters customer loyalty and business growth.</p>
-                </div>
-            </div>
-        </section>
+    <section id="contact" class="container">
+      <h2>Let's Connect</h2>
+      <p class="muted">Open to suitable entry-level opportunities
+      in IT support, customer care, networking and web design.</p>
+      <p>Email: <a href="mailto:[YOUR_EMAIL]">[Your email]</a></p>
+      <p>Phone: [Your phone number]</p>
+      <p>LinkedIn: <a href="[YOUR_LINKEDIN_URL]">My LinkedIn profile</a></p>
+      <p>Location: Nairobi, Kenya</p>
+    </section>
+  </main>
 
-        <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills__container bd-grid">
-                <div class="skills__item">
-                    <h3 class="skills__subtitle">Customer Service</h3>
-                    <div class="skills__bar">
-                        <div class="skills__percentage" style="width: 95%;">95%</div>
-                    </div>
-                </div>
-
-                <div class="skills__item">
-                    <h3 class="skills__subtitle">Python Development</h3>
-                    <div class="skills__bar">
-                        <div class="skills__percentage" style="width: 80%;">80%</div>
-                    </div>
-                </div>
-
-                <div class="skills__item">
-                    <h3 class="skills__subtitle">Networking</h3>
-                    <div class="skills__bar">
-                        <div class="skills__percentage" style="width: 70%;">70%</div>
-                    </div>
-                </div>
-
-                <div class="skills__item">
-                    <h3 class="skills__subtitle">Cybersecurity</h3>
-                    <div class="skills__bar">
-                        <div class="skills__percentage" style="width: 75%;">75%</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--===== PROJECTS =====-->
-<section class="projects section" id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="projects__container bd-grid">
-
-        <div class="project__item">
-            <h3 class="project__title">Chemist Website</h3>
-            <p class="project__description">A responsive e-commerce website for a local chemist. Features include inventory browsing, secure checkout, and prescription uploads.</p>
-        <a href="https://spaseaepson.great-site.net/" class="project__link" target="_blank">Visit Live Site</a>
-        </div>
-
-        <div class="project__item">
-            <h3 class="project__title">Salon Website</h3>
-            <p class="project__description">A modern salon website showcasing services, online booking, staff profiles, and integrated customer testimonials.</p>
-            <a href="https://blessedsalon.kesug.com/" class="project__link" target="_blank">Visit Live Site</a>
-        </div>
-        
-        <div class="project__item">
-    <h3 class="project__title">Telemedicine Platform</h3>
-    <p class="project__description">
-        A live web-based telemedicine solution that supports virtual consultations, appointment scheduling, and secure access to patient records. Built for accessibility and ease of use in healthcare settings.
-    </p>
-    <a href="https://epsonagunda.wuaze.com/" class="project__link" target="_blank">Visit Live Site</a>
-</div>
-
-
+  <footer>
+    <div class="container">
+      &copy; <span id="year"></span> Epson Agunda. All rights reserved.
     </div>
-</section>
-
-
-        <!--===== EXPERIENCE =====-->
-        <section class="work section" id="experience">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="work__container bd-grid">
-                <div class="work__item">
-                    <h3>Customer Care Representative</h3>
-                    <p><strong>Bliss Medical Centre</strong> &mdash; 2024 – Present</p>
-                    <p>Delivering timely support and resolving customer concerns to ensure client satisfaction and retention.</p>
-                </div>
-                <div class="work__item">
-                    <h3>Customer Service Executive</h3>
-                    <p><strong>Medicross Medical Centre</strong> &mdash; 2018 – 2024</p>
-                    <p>Handled inquiries, complaints, and escalations while enhancing operational efficiency through feedback systems.</p>
-                </div>
-                <div class="work__item">
-                    <h3>Front Desk Officer</h3>
-                    <p><strong>Clinix Voi</strong> &mdash; 2014 – 2018</p>
-                    <p>Served as the first point of contact for clients, managed appointments, and coordinated administrative support.</p>
-                </div>
-            </div>
-        </section>
-
-        <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Get in Touch</h2>
-            <div class="contact__container bd-grid">
-                <form action="#" class="contact__form">
-                    <input type="text" placeholder="Your Name" class="contact__input" required>
-                    <input type="email" placeholder="Your Email" class="contact__input" required>
-                    <textarea placeholder="Your Message" class="contact__input" rows="5" required></textarea>
-                    <input type="submit" value="Send Message" class="contact__button button">
-                </form>
-            </div>
-        </section>
-
-    </main>
-
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-        <p class="footer__title">Epson Agunda</p>
-        <div class="footer__social">
-            <a href="https://facebook.com" class="footer__icon" target="_blank"><i class="bx bxl-facebook"></i></a>
-            <a href="https://instagram.com" class="footer__icon" target="_blank"><i class="bx bxl-instagram"></i></a>
-            <a href="https://twitter.com" class="footer__icon" target="_blank"><i class="bx bxl-twitter"></i></a>
-        </div>
-        <p class="footer__copy">&#169; 2025 Epson Agunda. All rights reserved.</p>
-    </footer>
-
-    <!--===== SCROLL REVEAL SCRIPT =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="assets/js/main.js"></script>
-
+  </footer>
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
 </body>
-
 </html>
-
-
-
-
-
-
-
